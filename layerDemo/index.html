@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="layer/skin/layer.css" />
+		<script type="text/javascript" src="js/jquery-2.2.1.js"></script>
+		<script type="text/javascript" src="layer/layer.js"></script>
+
+	</head>
+
+	<body>
+		<span id="span" style="display: none;">123</span>
+		<script type="text/ecmascript">
+			//layer.open({
+			//	type:2,
+			//	content:"http://www.baidu.com"
+			//})
+			layer.open({
+				skin: 'demo-class',
+				type:2,
+				content:"http://www.baidu.com",
+				area:['500px','300px'],
+				moveOut:true,
+				moveEnd:function(){
+					alert("ok");
+				},
+				maxmin:true
+				});
+		</script>
+		<script type="text/javascript" src="js/layer.js" ></script>
+	</body>
+
+</html>
